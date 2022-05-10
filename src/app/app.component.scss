@@ -1,0 +1,113 @@
+// .container-default{
+//   z-index: 1;
+//   position: relative;
+// }
+// .container-1::before{
+//   content: " ";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   background: url("../assets/img/flower2.svg");
+//   // background-image: linear-gradient(rgba(102, 80, 96, 0.514), rgba(102, 100, 102, 0.7)), url("../assets/img/flower2.png");
+//   background-color: #ffcae3c4;
+//   height: 100vh;
+//   background-repeat: repeat-x;
+//   opacity: .2;
+//   z-index: -1;
+// }
+
+// mat-card{
+//   background-color: transparent;
+// }
+// .card-container-1{
+//   position: absolute;
+//   text-align: center;
+//   padding: 1rem;
+//   width: 24%;
+//   left: 38%;
+//   margin-top: 20%;
+// }
+
+// .container-2{
+
+// }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 5px;
+}
+
+.parallax {
+  position: absolute;
+  height: 100%;
+}
+
+.parallax-item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.p-item-1 {
+  background: url(../assets/img/moon-night.png) center/cover no-repeat;
+}
+
+.p-item-3 {
+  background: url(../assets/img/moon-night-bottom.png) bottom/100% no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.322);
+  z-index: 2;
+}
+
+.p-item-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10000%;
+  height: 100%;
+  content: '';
+  background: url(../assets/img/flower2.png) repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200w, 0, 0);
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 100vh;
+}
+
+.content-header {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-me {
+  height: 50vh;
+  font-size: 40px;
+}
+
+.container-card{
+  z-index: -10;
+}
