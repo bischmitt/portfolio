@@ -14,16 +14,17 @@ $bg: #ffefea;
 
 html,
 body {
-  height: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: $bg;
 }
 
 body {
   margin: 0;
-  background-color: $bg;
 }
 
+mat-grid-tile {
+  background: rgb(42, 121, 148);
+}
 .mat-form-field, .mat-select{
   width: 24rem;
   margin: 0;

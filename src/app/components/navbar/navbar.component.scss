@@ -1,0 +1,14 @@
+nav{
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-light .navbar-toggler{
+  background-color: blue;
+}
+
+svg:hover{
+  fill: rgb(255, 0, 0);
+  transform: scale(1.5);
+
+}
