@@ -1,8 +1,7 @@
-
 @import "@angular/material/theming";
 @include mat-core();
 
-$color-primary: mat-palette($mat-red, 100, 200);
+$color-primary: mat-palette($mat-pink, A700, 200);
 $color-accent: mat-palette($mat-teal, 900, 800, 700);
 $color-warn: mat-palette($mat-red, A700);
 
@@ -16,34 +15,10 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $bg;
-}
-
-body {
   margin: 0;
 }
 
-mat-grid-tile {
-  background: rgba(42, 121, 148, 0.733);
-}
-.mat-form-field, .mat-select{
-  width: 24rem;
-  margin: 0;
-}
-
-.mat-raised-button{
+.mat-raised-button {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
-
-.pink-snackbar{
-  background-color: mat-color($color-accent, 900);
-  color: $bg;
-  width: 30%;
-  position: fixed;
-  top: 40%;
-  left: 35%;
-  text-align: center;
-  font-size: 30px !important;
-}
-
-

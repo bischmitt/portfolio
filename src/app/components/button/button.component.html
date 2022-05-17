@@ -1,3 +1,5 @@
-<button mat-raised-button color="accent" class="m-2">
-Teste
-</button>
+<a [href]="hrefLink" target="_blank">
+  <button mat-raised-button color="primary" [class]="'btn' + ' ' + 'm-2' + ' ' + btnType">
+    {{ btnText }}
+  </button>
+</a>
