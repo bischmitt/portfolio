@@ -5,12 +5,12 @@ nav {
 }
 
 .navbar-light .navbar-toggler {
-  background-color: #ff33a3;
+  background-color: $pink;
 }
 
 ul li,
 svg:hover {
-  fill: #ff33a3;
+  fill: #c51162;
   transform: scale(1.2);
 }
 
