@@ -43,6 +43,10 @@ h5 {
   text-transform: uppercase;
 }
 
+h1, h2{
+  font-size: 30px;
+}
+
 .parallax {
   position: absolute;
   height: 100%;
@@ -60,22 +64,17 @@ h5 {
   background: url(../../../assets/img/moon-night.png) center/cover no-repeat;
 }
 
-// .p-item-2{
-//   overflow: auto;
-// }
-
-.p-item-3 {
+.p-item-2 {
   background: url(../../../assets/img/moon-night-bottom.png) bottom/100% no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.322);
   z-index: 2;
+  pointer-events: none;
 }
-
 
 .content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 1170px;
   margin: 0 auto;
   margin-top: 45vh;
@@ -83,6 +82,11 @@ h5 {
 
 .content-header {
   margin-bottom: 55vh;
+
+  h2{
+    font-size: 22px;
+    color: rgb(230, 228, 228);
+  }
 }
 
 .about-me {
