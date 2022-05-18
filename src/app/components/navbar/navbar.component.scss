@@ -1,14 +1,20 @@
-nav{
+nav {
   width: 100%;
+  margin: 10px -10px;
   position: fixed;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
   background-color: #ff33a3;
 }
 
-svg:hover{
+ul li,
+svg:hover {
   fill: #ff33a3;
   transform: scale(1.2);
+}
+
+ul li {
+  cursor: pointer;
 }
 

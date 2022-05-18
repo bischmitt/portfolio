@@ -6,24 +6,29 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24" fill="#ffffff" class="bi bi-house-door" viewBox="0 0 16 16">
+        <li class="nav-item" [cdkCopyToClipboard]="value" matTooltip="Clique para copiar meu email" (click)="openSnackBar()">
+          <a class="nav-link active" aria-current="page" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" class="bi bi-envelope"
+              viewBox="0 0 16 16">
               <path
-                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-            </svg></a>
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../../../assets/files/bianca-schmitt-curriculo.pdf" download><svg xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24" fill="#ffffff" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+        <li class="nav-item" matTooltip="Download do meu currículo :)">
+          <a class="nav-link active" aria-current="page" href="../../../assets/files/bianca-schmitt-curriculo.pdf"
+            download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+              class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
               <path
                 d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
               <path
                 d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-            </svg></a>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+        <li class="nav-item" matTooltip="Linkedin">
+          <a class="nav-link" href="https://www.linkedin.com/in/bischmitt98/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-linkedin"
               viewBox="0 0 16 16">
               <path
@@ -31,7 +36,7 @@
             </svg>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" matTooltip="Github">
           <a class="nav-link" href="https://github.com/bischmitt" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -55,3 +60,4 @@
     </div>
   </div>
 </nav>
+
