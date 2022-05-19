@@ -18,24 +18,22 @@
 
       <mat-card>
         <mat-card-content>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto earum quibusdam quos, accusamus
-          cum ipsam adipisci sequi modi aliquam commodi, saepe cumque dicta voluptatum. Eaque id maiores voluptatum
-          exercitationem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi pariatur provident, error suscipit
-          consequuntur? Quas voluptatum, voluptates culpa corrupti hic adipisci eos odit reprehenderit officiis rerum
-          provident fuga dignissimos.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque aperiam voluptates in magnam sapiente
-          laudantium doloremque mollitia vel hic accusantium animi, accusamus aliquid id. Dignissimos vero ipsa
-          aperiam maiores.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto delectus accusamus vel
-          ratione illum aperiam pariatur saepe, ad consequatur error neque ipsa molestias harum vero sapiente odit
-          magnam commodi!
+          Olá, pessoal, meu nome é Bianca Klein Schmitt e tenho 24 anos. Venho de uma família de agricultores que sempre
+          lutou muito para que eu pudesse estudar. Sou historiadora de formação, mas desde 2021 estou em transição de
+          carreira para a área de desenvolvimento web. Sou muito curiosa e atualmente estou imersa nas tecnologias
+          Angular e Java. Venha conhecer um pouco mais dos meus projetos!
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="about-me-my-projects">
+    <div class="about-me-my-projects" id="content">
       <h2>Meus projetos</h2>
       <app-projects></app-projects>
     </div>
   </div>
 </div>
+
+<a href="./#content" onclick="event.preventDefault(); location.hash='content'">
+  <span class="material-icons sticky-bottom anchor">
+    expand_more
+  </span>
+</a>

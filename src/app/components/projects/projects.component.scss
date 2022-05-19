@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "../../../styles.scss";
 
 .timeline-section {
   min-height: 100vh;
@@ -44,7 +45,7 @@
 .timeline-dot {
   height: 16px;
   width: 16px;
-  background-color: #c51162;
+  background-color: $pink;
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;
@@ -54,30 +55,34 @@
 .timeline-date {
   font-size: 18px;
   font-weight: 600;
-  color: #c51162;
+  color: $pink;
   margin: 6px 0 15px;
 }
 
 .timeline-content {
-  // background: linear-gradient(180deg, rgba(7, 30, 71, 0.9) 0%, rgba(7, 30, 71, 0.6) 35%, rgba(7, 30, 71, 0.2) 80%);
-  background: linear-gradient(180deg, rgba(23, 74, 104, 0.9) 0%, rgba(23, 74, 104, 0.6) 35%, rgba(23, 74, 104, 0.2) 80%);
+  background: linear-gradient(180deg, rgba(1, 11, 33, 0.8) 0%, rgba(7, 30, 71, 0.6) 35%, rgba(23, 74, 104, 0.4) 80%);
+  // background: linear-gradient(180deg, rgba(23, 74, 104, 0.9) 0%, rgba(23, 74, 104, 0.6) 35%, rgba(23, 74, 104, 0.2) 80%);
   padding: 30px;
   font-family: 'poppins';
   line-height: 22px;
 }
 
 mat-card-title {
-  color: #ffffff;
+  color: $white;
 }
 
-mat-card-subtitle, small {
-  color: #c8c8c8;
+.mat-card-subtitle, small {
+  color: $off-white;
+  font-size: 16px;
 }
 
 img {
   height: 320px;
 }
 
+.material-icons{
+  color: $pink;
+}
 
 /* responsive */
 @media(max-width: 767px) {
@@ -100,6 +105,4 @@ img {
   }
 }
 
-.material-icons{
-  color: #c51162;
-}
+

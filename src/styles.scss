@@ -1,5 +1,4 @@
 @import "@angular/material/theming";
-@import url("assets/config_scss/_variables.scss");
 @include mat-core();
 
 $color-primary: mat-palette($mat-pink, A700, 200);
@@ -8,14 +7,18 @@ $color-warn: mat-palette($mat-red, A700);
 
 $custom-theme: mat-light-theme($color-primary, $color-accent, $color-warn);
 $my-color: map-get($color-primary, 200);
-$bg: #ffefea;
+
+$pink: #c51162;
+$white: #ffe7f2;
+$off-white:#e0cfd6;
+$blue: #174a68;
 
 @include angular-material-theme($custom-theme);
 
 html,
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: $bg;
+  background-color: $off-white;
   margin: 0;
 }
 
@@ -25,14 +28,17 @@ body {
 }
 
 .pink-snackbar {
-  background-color: #c51162;
-  color: #ffefea;
+  background-color: $pink;
+  color: $white;
   font-weight: 500;
   text-align: center;
 }
 
 .matTooltip{
-  background: #c51162;
+  background: $pink;
   padding: 0.5rem;
   font-size: 12px;
+}
+.material-icons{
+  color: $pink;
 }

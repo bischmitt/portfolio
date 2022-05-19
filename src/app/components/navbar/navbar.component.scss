@@ -1,3 +1,4 @@
+@import "../../../styles.scss";
 nav {
   width: 100%;
   margin: 10px -10px;
@@ -10,7 +11,7 @@ nav {
 
 ul li,
 svg:hover {
-  fill: #c51162;
+  fill: $pink;
   transform: scale(1.2);
 }
 

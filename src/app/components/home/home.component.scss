@@ -1,44 +1,11 @@
-// .container-default{
-//   z-index: 1;
-//   position: relative;
-// }
-// .container-1::before{
-//   content: " ";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   background: url("../assets/img/flower2.svg");
-//   // background-image: linear-gradient(rgba(102, 80, 96, 0.514), rgba(102, 100, 102, 0.7)), url("../assets/img/flower2.png");
-//   background-color: #ffcae3c4;
-//   height: 100vh;
-//   background-repeat: repeat-x;
-//   opacity: .2;
-//   z-index: -1;
-// }
-
-// mat-card{
-//   background-color: transparent;
-// }
-// .card-container-1{
-//   position: absolute;
-//   text-align: center;
-//   padding: 1rem;
-//   width: 24%;
-//   left: 38%;
-//   margin-top: 20%;
-// }
-
-// .container-2{
-
-// }
+@import "src/styles.scss";
 h1,
 h2,
 h3,
 h4,
 h5 {
   letter-spacing: 5px;
-  color: white;
+  color: $white;
   text-align: center;
   text-transform: uppercase;
 }
@@ -85,12 +52,12 @@ h1, h2{
 
   h2{
     font-size: 22px;
-    color: rgb(230, 228, 228);
+    color: $off-white;
   }
 }
 
 .about-me {
-  padding-bottom: 35vh;
+  padding-bottom: 15vh;
   font-size: 40px;
 }
 
@@ -100,7 +67,6 @@ h1, h2{
   justify-content: space-around;
   align-content: center;
   margin-bottom: 45vh;
-  // background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 1rem;
 }
@@ -111,7 +77,7 @@ h1, h2{
   border-radius: 100%;
 }
 
-mat-card {
+.mat-card {
   width: 60%;
   background: linear-gradient(180deg, rgba(1, 11, 33, 0.6) 0%, rgba(7, 30, 71, 0.6) 35%, rgba(23, 74, 104, 0.6) 80%);
 }
@@ -119,9 +85,17 @@ mat-card {
 mat-card mat-card-content {
   font-family: 'poppins', sans-serif;
   font-size: 18px;
-  color: rgb(255, 255, 255);
+  color: $white;
   line-height: 1.4;
   letter-spacing: 1px;
   text-align: justify;
   padding: 1rem;
+}
+
+.anchor{
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 36px;
+  z-index: 100;
 }
