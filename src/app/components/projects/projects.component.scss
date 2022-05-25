@@ -71,7 +71,8 @@ mat-card-title {
   color: $white;
 }
 
-.mat-card-subtitle, small {
+.mat-card-subtitle,
+small {
   color: $off-white;
   font-size: 16px;
 }
@@ -80,19 +81,19 @@ img {
   height: 320px;
 }
 
-.material-icons{
+.material-icons {
   color: $pink;
 }
 
 /* responsive */
-@media(max-width: 767px) {
+@media(max-width: 900px) {
   .timeline-items::before {
     left: 7px;
   }
 
   .timeline-item:nth-child(odd) {
     padding-right: 0;
-    text-align: left;
+    text-align: justify;
   }
 
   .timeline-item:nth-child(odd),
@@ -103,6 +104,18 @@ img {
   .timeline-dot {
     left: 0;
   }
+
+  mat-card {
+    margin-bottom: 120px;
+  }
+
+  .timeline-item {
+    margin-bottom: -50px;
+    width: 100%;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: -115px;
+    }
+  }
 }
-
-

@@ -1,4 +1,5 @@
 @import "src/styles.scss";
+
 h1,
 h2,
 h3,
@@ -10,7 +11,8 @@ h5 {
   text-transform: uppercase;
 }
 
-h1, h2{
+h1,
+h2 {
   font-size: 30px;
 }
 
@@ -42,15 +44,14 @@ h1, h2{
 .content {
   position: relative;
   z-index: 1;
-  max-width: 1170px;
   margin: 0 auto;
-  margin-top: 45vh;
+  margin-top: 42vh;
 }
 
 .content-header {
   margin-bottom: 55vh;
 
-  h2{
+  h2 {
     font-size: 22px;
     color: $off-white;
   }
@@ -92,10 +93,37 @@ mat-card mat-card-content {
   padding: 1rem;
 }
 
-.anchor{
+.anchor {
   position: fixed;
   bottom: 10px;
   right: 15px;
   font-size: 36px;
   z-index: 100;
+}
+
+@media(max-width: 900px) {
+
+  h1,
+  h2 {
+    line-height: 40px;
+  }
+
+  .content {
+    margin-top: 40vh;
+  }
+
+  .about-me-who-am-i {
+    flex-direction: column;
+    margin-bottom: 35vh;
+  }
+
+  .about-me-who-am-i img {
+    margin-bottom: 100px;
+  }
+}
+
+@media(max-width: 425px) {
+  .mat-card {
+    width: 100%;
+  }
 }

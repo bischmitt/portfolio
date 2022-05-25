@@ -1,4 +1,5 @@
 @import "../../../styles.scss";
+
 nav {
   width: 100%;
   margin: 10px -10px;
@@ -6,8 +7,21 @@ nav {
 }
 
 .navbar-light .navbar-toggler {
-  background-color: $pink;
+  background-color: transparent;
+  border: none;
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(197, 17, 98)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 ul li,
 svg:hover {
@@ -15,7 +29,8 @@ svg:hover {
   transform: scale(1.2);
 }
 
-ul li {
-  cursor: pointer;
+@media(max-width: 900px) {
+  ul li {
+    margin: 5px;
+  }
 }
-
